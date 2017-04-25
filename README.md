@@ -35,10 +35,10 @@
 
 ```Coldfusion
 # bad - no space
-<cfparam name="attributes.fooBarIDs" default=""/>
+<set name="fooBar" value="#fooBarValue#"/>
 
 # good
-<cfparam name="attributes.fooBarIDs" default="" />
+<set name="fooBar" value="#fooBarValue#" />
 ```
 
 * <a name="camelCase"></a>
