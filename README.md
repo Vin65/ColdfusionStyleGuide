@@ -38,3 +38,24 @@
 # good
 <cfparam name="attributes.fooBarIDs" default="" />
 ```
+
+* <a name="camelCase"></a>
+  Use **camelCase** for variables, functions, and argument names. Use **SnakeCase** for object names.
+<sup>[[link](#camelCase)]</sup>
+```Coldfusion
+# bad - Object with camelCase and function/argument with SnakeCase
+<cfcomponent displayname="myObject" extends="vin65.basecomponent">
+	<cffunction name="Init" access="package" output="false" returntype="CartObject">
+		<cfargument name="MyObjectId" type="string" required="true">
+		...
+	</cffunction>
+</cfcomponent>
+
+# good
+<cfcomponent displayname="MyObject" extends="vin65.basecomponent">
+	<cffunction name="init" access="package" output="false" returntype="CartObject">
+		<cfargument name="myObjectID" type="string" required="true">
+		...
+	</cffunction>
+</cfcomponent>
+```
