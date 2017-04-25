@@ -1,5 +1,10 @@
 # Coldfusion Style Guide
 
+## Table of Contents
+
+* [Source Code Layout](#source-code-layout)
+* [Syntax](#syntax)
+
 ## Source Code Layout
 
 > Nearly everybody is convinced that every style but their own is
@@ -26,6 +31,7 @@
 	<cfargument name="foo">
 </cffunction>
 ```
+## Syntax
 
 * <a name="self-closing-tag"></a>
   Use one space between the end of the line and the self closing tag
