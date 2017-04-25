@@ -24,3 +24,13 @@
 	<cfargument name="foo">
 </cffunction>
 ```
+
+* Use one space between the end of the line and the self closing tag
+
+```Coldfusion
+# bad - no space
+<cfparam name="attributes.fooBarIDs" default=""/>
+
+# good
+<cfparam name="attributes.fooBarIDs" default="" />
+```
