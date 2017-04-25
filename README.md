@@ -33,10 +33,20 @@
 
 ```Coldfusion
 # bad - no space
-<cfparam name="attributes.fooBarIDs" default=""/>
+<set name="fooBar" value="#fooBarValue#"/>
 
 # good
-<cfparam name="attributes.fooBarIDs" default="" />
+<set name="fooBar" value="#fooBarValue#" />
+```
+
+* Never use self closing tags unless you are coding XML (where they are required)
+
+```Coldfusion
+# bad - do not use self closing tags in cfm or cfc files
+<cfset variables.fooBar='I am located in a cfm file' />
+
+# good
+<cfset variables.fooBar='I am located in a cfm file'>
 ```
 
 * <a name="camelCase"></a>
