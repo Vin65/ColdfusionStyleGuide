@@ -31,14 +31,22 @@
   Use one space between the end of the line and the self closing tag
 <sup>[[link](#self-closing-tag)]</sup>
 
-* Never use self closing tags unless you are coding XML (where they are required)
-
 ```Coldfusion
 # bad - no space
 <set name="fooBar" value="#fooBarValue#"/>
 
 # good
 <set name="fooBar" value="#fooBarValue#" />
+```
+
+* Never use self closing tags unless you are coding XML (where they are required)
+
+```Coldfusion
+# bad - do not use self closing tags in cfm or cfc files
+<cfset variables.fooBar='I am located in a cfm file' />
+
+# good
+<cfset variables.fooBar='I am located in a cfm file'>
 ```
 
 * <a name="camelCase"></a>
