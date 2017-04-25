@@ -9,9 +9,11 @@
 
 * <a name="utf-8"></a>
   Use `UTF-8` as the source file encoding.
+<sup>[[link](#tabs-indentation)]</sup>
 
-* <a name="spaces-indentation"></a>
+* <a name="tabs-indentation"></a>
   Use one **tab** per indentation level.
+<sup>[[link](#tabs-indentation)]</sup>
 
 ```Coldfusion
 # bad - two tabs
@@ -25,7 +27,9 @@
 </cffunction>
 ```
 
-* Use one space between the end of the line and the self closing tag
+* <a name="self-closing-tag"></a>
+  Use one space between the end of the line and the self closing tag
+<sup>[[link](#self-closing-tag)]</sup>
 
 ```Coldfusion
 # bad - no space
