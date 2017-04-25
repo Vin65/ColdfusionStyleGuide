@@ -54,7 +54,7 @@
 	...
 </cffunction>
 
-# bad - Id should be ID
+# bad - `Id` should be uppercase
 <cfset variables.websiteId=12345>
 
 # good
