@@ -31,6 +31,8 @@
   Use one space between the end of the line and the self closing tag
 <sup>[[link](#self-closing-tag)]</sup>
 
+* Never use self closing tags unless you are coding XML (where they are required)
+
 ```Coldfusion
 # bad - no space
 <cfparam name="attributes.fooBarIDs" default=""/>
