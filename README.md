@@ -40,22 +40,40 @@
 ```
 
 * <a name="camelCase"></a>
-  Use **camelCase** for variables, functions, and argument names. Use **SnakeCase** for object names.
+  Use **camelCase** for variables, functions, and argument names.
 <sup>[[link](#camelCase)]</sup>
 ```Coldfusion
-# bad - Object with camelCase and function/argument with SnakeCase
-<cfcomponent displayname="myObject" extends="vin65.basecomponent">
-	<cffunction name="Init" access="package" output="false" returntype="CartObject">
-		<cfargument name="MyObjectId" type="string" required="true">
-		...
-	</cffunction>
-</cfcomponent>
+# bad - Function/argument with SnakeCase
+<cffunction name="Init">
+	<cfargument name="MyObjectId">
+</cffunction>
 
 # good
-<cfcomponent displayname="MyObject" extends="vin65.basecomponent">
-	<cffunction name="init" access="package" output="false" returntype="CartObject">
-		<cfargument name="myObjectID" type="string" required="true">
-		...
-	</cffunction>
-</cfcomponent>
+<cffunction name="init">
+	<cfargument name="myObjectID">
+	...
+</cffunction>
+
+# bad - `Id` should be uppercase
+<cfset variables.websiteId=12345>
+
+# good
+<cfset variables.websiteID=12345>
+
+# bad - Acronyms at the beginning of a variable should be all lowercase
+<cfset variables.POSProfileID=12345>
+
+# good
+<cfset variables.posProfileID=12345>
+```
+
+* <a name="SnakeCase"></a>
+  Use **SnakeCase** for object names.
+<sup>[[link](#SnakeCase)]</sup>
+```Coldfusion
+# bad - Object with camelCase
+<cfcomponent displayname="myObject">
+
+# good
+<cfcomponent displayname="MyObject">
 ```
