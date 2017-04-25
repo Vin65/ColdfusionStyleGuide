@@ -44,13 +44,13 @@
 <sup>[[link](#camelCase)]</sup>
 ```Coldfusion
 # bad - Function/argument with SnakeCase
-<cffunction name="Init" access="package" output="false" returntype="CartObject">
-	<cfargument name="MyObjectId" type="string" required="true">
+<cffunction name="Init">
+	<cfargument name="MyObjectId">
 </cffunction>
 
 # good
-<cffunction name="init" access="package" output="false" returntype="CartObject">
-	<cfargument name="myObjectID" type="string" required="true">
+<cffunction name="init">
+	<cfargument name="myObjectID">
 	...
 </cffunction>
 
@@ -72,8 +72,8 @@
 <sup>[[link](#SnakeCase)]</sup>
 ```Coldfusion
 # bad - Object with camelCase
-<cfcomponent displayname="myObject" extends="vin65.basecomponent">
+<cfcomponent displayname="myObject">
 
 # good
-<cfcomponent displayname="MyObject" extends="vin65.basecomponent">
+<cfcomponent displayname="MyObject">
 ```
