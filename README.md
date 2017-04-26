@@ -4,6 +4,7 @@
 
 * [Source Code Layout](#source-code-layout)
 * [Syntax](#syntax)
+* [Strings](#strings)
 
 ## Source Code Layout
 
@@ -108,9 +109,7 @@
 </cfif>
 ```
 
-* <a name="conditional-comparison"></a>
-  Prefer using lowercase english words when comparing multiple variables in a conditional.
-<sup>[[link](#conditional-comparison)]</sup>
+* Prefer using lowercase english words when comparing multiple variables in a conditional.
 
 ```Coldfusion
 # bad - use of && and ||
@@ -120,4 +119,18 @@
 # good
 <cfif (variables.isFooBar and variables.isBarFoo) or variables.isAllTheFooBars>
 </cfif>
+```
+
+## Strings
+
+* <a name="string-interpolation"></a>
+  Prefer string interpolation rather than string concatenation
+<sup>[[link](#string-interpolation)]</sup>
+
+```Coldfusion
+# bad - string concatenation
+<cfset variables.fooBar='The brown fox' & variables.label & 'the fence.'>
+
+# good
+<cfset variables.fooBar="The brown fox #variables.label# the fence.">
 ```
