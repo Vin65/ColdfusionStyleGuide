@@ -93,3 +93,17 @@
 # good
 <cfcomponent displayname="MyObject">
 ```
+
+* <a name="conditional-comparison"></a>
+  Prefer using a positive comparison in an if statement rather than a double negative.
+<sup>[[link](#conditional-comparison)]</sup>
+
+```Coldfusion
+# bad - double negative comparison
+<cfif fooBarQuery.queryCount neq 0>
+</cfif>
+
+# good
+<cfif fooBarQuery.queryCount gt 0>
+</cfif>
+```
