@@ -98,11 +98,11 @@
 ## Strings
 
 * <a name="string-interpolation"></a>
-  Prefer string interpolation rather than string concatination
+  Prefer string interpolation rather than string concatenation
 <sup>[[link](#string-interpolation)]</sup>
 
 ```Coldfusion
-# bad - string concatination
+# bad - string concatenation
 <cfset variables.fooBar='The brown fox' & variables.label & 'the fence.'>
 
 # good
