@@ -109,8 +109,9 @@
 </cfif>
 ```
 
-* Prefer using lowercase english words when comparing multiple variables in a conditional.
-
+* <a name="comparison"></a>
+  Prefer using lowercase english words when comparing multiple variables in a conditional.
+<sup>[[link](#comparison)]</sup>
 ```Coldfusion
 # bad - use of && and ||
 <cfif (variables.isFooBar && variables.isBarFoo) || variables.isAllTheFooBars>
