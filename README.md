@@ -5,6 +5,7 @@
 * [Source Code Layout](#source-code-layout)
 * [Syntax](#syntax)
 * [Strings](#strings)
+* [SQL](#sql)
 
 ## Source Code Layout
 
@@ -134,4 +135,24 @@
 
 # good
 <cfset variables.fooBar="The brown fox #variables.label# the fence.">
+```
+
+## SQL
+
+* <a name="with-no-lock"></a>
+  Use `WITH(NOLOCK)` on all select statements to prevent locking the database table for others. (MSSQL specific)
+<sup>[[link](#with-no-lock)]</sup>
+
+```Coldfusion
+# bad - no WITH(NOLOCK)
+<cfquery name="fooBar" datasource="#datasource#">
+SELECT *
+FROM fooBarTable
+</cfquery>
+
+# good
+<cfquery name="fooBar" datasource="#datasource#">
+SELECT *
+FROM fooBarTable WITH(NOLOCK)
+</cfquery>
 ```
