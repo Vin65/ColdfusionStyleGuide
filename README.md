@@ -4,6 +4,7 @@
 
 * [Source Code Layout](#source-code-layout)
 * [Syntax](#syntax)
+* [Strings](#strings)
 
 ## Source Code Layout
 
@@ -92,4 +93,18 @@
 
 # good
 <cfcomponent displayname="MyObject">
+```
+
+## Strings
+
+* <a name="string-interpolation"></a>
+  Prefer string interpolation rather than string concatination
+<sup>[[link](#string-interpolation)]</sup>
+
+```Coldfusion
+# bad - string concatination
+<cfset variables.fooBar='The brown fox' & variables.label & 'the fence.'>
+
+# good
+<cfset variables.fooBar="The brown fox #variables.label# the fence.">
 ```
