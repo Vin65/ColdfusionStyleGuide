@@ -95,6 +95,32 @@
 <cfcomponent displayname="MyObject">
 ```
 
+* <a name="conditional-comparison"></a>
+  Prefer using a positive comparison in an if statement rather than a double negative.
+<sup>[[link](#conditional-comparison)]</sup>
+
+```Coldfusion
+# bad - double negative comparison
+<cfif fooBarQuery.queryCount neq 0>
+</cfif>
+
+# good
+<cfif fooBarQuery.queryCount gt 0>
+</cfif>
+```
+
+* Prefer using lowercase english words when comparing multiple variables in a conditional.
+
+```Coldfusion
+# bad - use of && and ||
+<cfif (variables.isFooBar && variables.isBarFoo) || variables.isAllTheFooBars>
+</cfif>
+
+# good
+<cfif (variables.isFooBar and variables.isBarFoo) or variables.isAllTheFooBars>
+</cfif>
+```
+
 ## Strings
 
 * <a name="string-interpolation"></a>
