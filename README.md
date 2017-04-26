@@ -140,7 +140,7 @@
 ## SQL
 
 * <a name="with-no-lock"></a>
-  Use WITH(NOLOCK) on all select statements to prevent locking the database table for others. (MSSQL specific)
+  Use `WITH(NOLOCK)` on all select statements to prevent locking the database table for others. (MSSQL specific)
 <sup>[[link](#with-no-lock)]</sup>
 
 ```Coldfusion
