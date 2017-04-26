@@ -107,3 +107,17 @@
 <cfif fooBarQuery.queryCount gt 0>
 </cfif>
 ```
+
+* <a name="conditional-comparison"></a>
+  Prefer using lowercase english words when comparing multiple variables in a conditional.
+<sup>[[link](#conditional-comparison)]</sup>
+
+```Coldfusion
+# bad - use of && and ||
+<cfif (variables.isFooBar && variables.isBarFoo) || variables.isAllTheFooBars>
+</cfif>
+
+# good
+<cfif (variables.isFooBar and variables.isBarFoo) or variables.isAllTheFooBars>
+</cfif>
+```
