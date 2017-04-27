@@ -171,3 +171,25 @@ SELECT *
 FROM fooBarTable WITH(NOLOCK)
 </cfquery>
 ```
+
+* <a name="uppercase-sql"></a>
+  Uppercase all SQL functions and reserved words. (MSSQL specific)
+<sup>[[link](#uppercase-sql)]</sup>
+
+```Coldfusion
+# bad - all SQL functions/words are lowercase
+<cfquery name="fooBar" datasource="#datasource#">
+select top 1 *, count(*)
+from fooBarTable with(nolock)
+where columnName like '%foo%'
+	and columnName2 = 'bar'
+</cfquery>
+
+# good
+<cfquery name="fooBar" datasource="#datasource#">
+SELECT TOP 1 *, COUNT(*)
+FROM fooBarTable WITH(NOLOCK)
+WHERE columnName LIKE '%foo%'
+	AND columnName2 = 'bar'
+</cfquery>
+```
