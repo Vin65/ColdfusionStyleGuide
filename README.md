@@ -85,6 +85,21 @@
 <cfset variables.posProfileID=12345>
 ```
 
+* <a name="camelCase-resourceBundle"></a>
+  Prefer **camelCase** for resource bundle variables.
+<sup>[[link](#camelCase-resourceBundle)]</sup>
+```Coldfusion
+# bad - resource bundle with SnakeCase
+<cfoutput>
+	#request.rb('FooBar')#
+</cfoutput>
+
+# good
+<cfoutput>
+	#request.rb('fooBar')#
+</cfoutput>
+```
+
 * <a name="SnakeCase"></a>
   Use **SnakeCase** for object names.
 <sup>[[link](#SnakeCase)]</sup>
