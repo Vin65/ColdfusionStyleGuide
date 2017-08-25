@@ -25,7 +25,7 @@
 ```Coldfusion
 # bad - two tabs
 <cffunction name="fooBar">
-		<cfargument name="foo">
+	<cfargument name="foo">
 </cffunction>
 
 # good
@@ -83,6 +83,12 @@
 
 # good
 <cfset variables.posProfileID=12345>
+
+# bad - Acronyms in the middle of a variable should be all uppercase
+<cfset variables.somePosProfileID=12345>
+
+# good
+<cfset variables.somePOSProfileID=12345>
 ```
 
 * <a name="camelCase-resourceBundle"></a>
