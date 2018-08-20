@@ -56,6 +56,17 @@
 # good
 <cfset variables.fooBar='I am located in a cfm file'>
 ```
+* <a name="assigning-operators"></a>
+  No spaces between assigning operators.
+<sup>[[link](#assigning-operators)]</sup>
+
+```Coldfusion
+# bad - using spaces
+<cfset test = "this is a variable">
+
+# good
+<cfset test="this is a variable">
+```
 
 * <a name="camelCase"></a>
   Use **camelCase** for variables, functions, and argument names.
